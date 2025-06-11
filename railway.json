@@ -1,0 +1,13 @@
+{
+  "build": {
+    "env": {
+      "PYTHONUNBUFFERED": "1"
+    }
+  },
+  "deploy": {
+    "startCommand": "python3 app/bot.py"
+  },
+  "env": {
+    "TELEGRAM_BOT_TOKEN": "your-bot-token-here"
+  }
+}
