@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: crypto-signal-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 app/bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
